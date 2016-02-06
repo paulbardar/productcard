@@ -32,14 +32,14 @@
 
 		prodColor.on('change', function(){
 			if (this.value === "grey"){
-			myImg.attr({'src': '../img/headphone-grey.png',
+			myImg.attr({'src': 'img/headphone-grey.png',
 							'alt': 'myImg'});
 
 			} else if (this.value === "black"){
-				myImg.attr({'src': '../img/headphones1.png',
+				myImg.attr({'src': 'img/headphones1.png',
 							'alt': 'myImg'});
 			} else {
-				myImg.attr({'src': '../img/headphonered.png',
+				myImg.attr({'src': 'img/headphonered.png',
 							'alt': 'myImg'});
 			}
 
