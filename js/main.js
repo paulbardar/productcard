@@ -28,35 +28,29 @@
 
 
 		var prodColor = $('[name="product_color"]'),
-			myImg = $('#myImage, #myImage1, #myImage2'),
 			myTitle = $('.ba-product__title > span');
 
-			prodColor.click(function() {
-			  myImg.animate({
-			    width: "80%",
-			    opacity: 0.8,
-			    marginLeft: "0.3in",
-			    fontSize: "3em",
-			    borderWidth: "10px"
-			  }, 1500 );
-			});
+
 
 
 		prodColor.on('change', function(){
 			if (this.value === "grey"){
-			myImg.attr({'src': 'img/headphone-grey.png',
-							'alt': 'myImg'});
+			$('.headphones-grey').fadeIn('slow');
+			$('.headphones-black').hide();
+			$('.headphones-red').hide();
 			myTitle.text("Wireless Grey");
 
 
 			} else if (this.value === "black"){
-				myImg.attr({'src': 'img/headphones1.png',
-							'alt': 'myImg'});
+				$('.headphones-grey').hide();
+				$('.headphones-black').fadeIn('slow');
+				$('.headphones-red').hide();
 				myTitle.text("Wireless Black");
 
 			} else {
-				myImg.attr({'src': 'img/headphonered.png',
-							'alt': 'myImg'});
+				$('.headphones-grey').hide();
+				$('.headphones-black').hide();
+				$('.headphones-red').fadeIn('slow');;
 				myTitle.text("Wireless Red");
 
 			}
