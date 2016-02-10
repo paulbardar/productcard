@@ -31,8 +31,6 @@
 			myTitle = $('.ba-product__title > span');
 
 
-
-
 		prodColor.on('change', function(){
 			if (this.value === "black"){
 				$('.headphones-grey').hide();
@@ -49,7 +47,7 @@
 			} else {
 				$('.headphones-grey').hide();
 				$('.headphones-black').hide();
-				$('.headphones-red').fadeIn('slow');;
+				$('.headphones-red').fadeIn('slow');
 				myTitle.text("Wireless Red");
 
 			}
