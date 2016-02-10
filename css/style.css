@@ -1191,9 +1191,5 @@ input[type=radio]:checked + .ba-radio-button {
 .slick-dots button:hover {
   background-color: #536dfe;
 }
-.ba-slider__item .headphones-grey,
-.ba-slider__item .headphones-red {
-  display: none;
-}
 
 /*# sourceMappingURL=style.css.map */
