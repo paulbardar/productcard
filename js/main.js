@@ -34,18 +34,17 @@
 
 
 		prodColor.on('change', function(){
-			if (this.value === "grey"){
-			$('.headphones-grey').fadeIn('slow');
-			$('.headphones-black').hide();
-			$('.headphones-red').hide();
-			myTitle.text("Wireless Grey");
-
-
-			} else if (this.value === "black"){
+			if (this.value === "black"){
 				$('.headphones-grey').hide();
 				$('.headphones-black').fadeIn('slow');
 				$('.headphones-red').hide();
 				myTitle.text("Wireless Black");
+
+			} else if (this.value === "grey"){
+				$('.headphones-grey').fadeIn('slow');
+				$('.headphones-black').hide();
+				$('.headphones-red').hide();
+				myTitle.text("Wireless Grey");
 
 			} else {
 				$('.headphones-grey').hide();
